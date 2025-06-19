@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasa Pembuatan Gambar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: black;
+      color: white;
+    }
+
+    /* Header Styles */
+    header {
+      position: relative;
+      background: red;
+      height: 130px;
+      overflow: hidden;
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(white 1px, transparent 1px);
+      background-size: 10px 10px;
+      animation: twinkle 1s infinite alternate;
+    }
+
+    @keyframes twinkle {
+      from { opacity: 0.5; }
+      to { opacity: 1; }
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 50px;
+    }
+
+    .header-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+    .header-text h1 {
+  font-size: 50px;
+  margin: 0; /* buang jarak bawaan */
+  margin-bottom: 5px; /* tambahkan sedikit jarak ke bawah */
+  font-weight: bold;
+  animation: colorChange 7s infinite;
+  text-shadow: 2px 2px 5px #000;
+    }
+
+    @keyframes colorChange {
+      0% { color: white; }
+      33% { color: skyblue; }
+      66% { color: black; }
+      100% { color: white; }
+    }
+
+    .header-text p {
+	  position: relative;
+      top: auto;
+	  margin-top: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+      -webkit-text-stroke: 0.5px black;
+    }
+
+    .divider {
+      height: 4px;
+      background: white;
+      box-shadow: 0 2px 5px #000;
+    }
+
+    /* Slider */
+    .slider {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider-track {
+      display: flex;
+      width: 100%;
+      animation: slide 15s infinite;
+    }
+
+    .slider img {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+    @keyframes slide {
+       0%   { transform: translateX(0%); }
+  20%  { transform: translateX(0%); }    /* Tahan gambar pertama */
+  30%  { transform: translateX(-100%); } /* Pindah ke gambar kedua */
+  50%  { transform: translateX(-100%); } /* Tahan gambar kedua */
+  60%  { transform: translateX(-200%); } /* Pindah ke gambar ketiga */
+  80%  { transform: translateX(-200%); } /* Tahan gambar ketiga */
+  100% { transform: translateX(0%); }    /* Kembali ke awal */
+}
+
+    /* Catalog */
+    .catalog {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      background: linear-gradient(135deg, #000, #111);
+    }
+
+    .item {
+      width: 300px;
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px #000;
+      text-align: center;
+    }
+
+    .item-title {
+      position: relative;
+      top: -30px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 1px 1px 3px black;
+      -webkit-text-stroke: 0.5px black;
+    }
+
+    .item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .item a {
+      display: block;
+      background: green;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    .separator-img {
+      width: 80%;
+      margin: 40px auto;
+      display: block;
+    }
+
+    .footer img {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .item {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="stars"></div>
+    <img class="logo" src="Gambar 1.png" alt="logo" />
+    <div class="header-text">
+      <h1>Sisenor Lahm</h1>
+      <p>Jasa Pembuat Gambar masa kini</p>
+    </div>
+  </header>
+  <div class="divider"></div>
+
+  <div class="slider">
+    <div class="slider-track">
+      <img src="Gambar 2.jpg" alt="slide1">
+      <img src="Gambar 3.jpg" alt="slide2">
+      <img src="Gambar 4.jpg" alt="slide3">
+    </div>
+  </div>
+
+  <div class="catalog">
+    <div class="item">
+      <img src="Gambar 7.jpg" />
+      <a href="https://sisenorlahm.github.io/Banner-Toko/">Telusuri / Banyak</a>
+    </div>
+    <div class="item">
+      <img src="Gambar 8.jpg" />
+      <a href="https://www.facebook.com/profile.php?id=61551905867190">Telusuri / Banyak</a>
+    </div>
+    <div class="item">
+      <img src="Gambar 9.jpg" />
+      <a href="https://www.facebook.com/profile.php?id=61551905867190">Telusuri / Banyak</a>
+    </div>
+    <div class="item">
+      <img src="Gambar 10.jpg" />
+      <a href="https://www.facebook.com/profile.php?id=61551905867190">Telusuri / Banyak</a>
+    </div>
+    <div class="item">
+      <img src="Gambar 11.jpg" />
+      <a href="https://www.facebook.com/profile.php?id=61551905867190">Telusuri / Banyak</a>
+    </div>
+    <div class="item">
+      <img src="Gambar 12.jpg" />
+      <a href="https://www.facebook.com/profile.php?id=61551905867190">Telusuri / Banyak</a>
+    </div>
+    <div class="item">
+      <img src="Gambar 13.jpg" />
+      <a href="https://www.facebook.com/profile.php?id=61551905867190">Telusuri / Banyak</a>
+    </div>
+    <div class="item">
+      <img src="Gambar 14.jpg" />
+      <a href="https://www.facebook.com/profile.php?id=61551905867190">Telusuri / Banyak</a>
+    </div>
+    <div class="item">
+      <img src="Gambar 15.jpg" />
+      <a href="https://www.facebook.com/profile.php?id=61551905867190">Telusuri / Banyak</a>
+    </div>
+	<div class="item">
+      <img src="Gambar 16.jpg" />
+      <a href="https://www.facebook.com/profile.php?id=61551905867190">Telusuri / Banyak</a>
+    </div>
+	<div class="item">
+      <img src="Gambar 17.jpg" />
+      <a href="https://www.facebook.com/profile.php?id=61551905867190">Telusuri / Banyak</a>
+    </div>
+	<div class="item">
+      <img src="Gambar 18.jpg" />
+      <a href="https://www.facebook.com/profile.php?id=61551905867190">Telusuri / Banyak</a>
+    </div>
+  </div>
+
+  <img class="separator-img" src="Gambar 5.jpg" alt="Separator" />
+
+  <div class="footer">
+    <img src="Gambar 6.jpg" alt="footer" />
+  </div>
+</body>
+</html>
